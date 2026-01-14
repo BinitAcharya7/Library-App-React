@@ -23,7 +23,7 @@ A modern, fully-responsive React e-commerce application for browsing and purchas
 - **React 19.2** - UI library
 - **React Router v6** - Client-side routing
 - **Font Awesome** - Icons
-- **CSS3** - Styling and animations
+- **CSS3 with BEM** - Styling and animations using BEM (Block Element Modifier) methodology
 - **JavaScript ES6+** - Modern JavaScript features
 
 ![](src/assets/Screenshot1.png)
