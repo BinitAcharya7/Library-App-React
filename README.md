@@ -17,8 +17,6 @@ A modern, fully-responsive React e-commerce application for browsing and purchas
 - **📱 Responsive Design**: Fully responsive across all devices
 - **🚀 Fast Navigation**: Client-side routing with React Router for instant page transitions
 
-![](src/assets/Screenshot1.png)
-![](src/assets/Screenshot2.png)
 
 ##  Technologies Used
 
@@ -27,6 +25,11 @@ A modern, fully-responsive React e-commerce application for browsing and purchas
 - **Font Awesome** - Icons
 - **CSS3** - Styling and animations
 - **JavaScript ES6+** - Modern JavaScript features
+
+![](src/assets/Screenshot1.png)
+
+
+![](src/assets/Screenshot2.png)
 
 ##  Installation
 
