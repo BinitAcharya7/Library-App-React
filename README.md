@@ -1,70 +1,155 @@
-# Getting Started with Create React App
+# 📚 Library - Online Book Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, fully-responsive React e-commerce application for browsing and purchasing books online. Features a clean UI, skeleton loading states, dynamic cart management, and smooth routing with React Router.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-19.2-61DAFB?style=flat&logo=react&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-6.x-CA4245?style=flat&logo=react-router&logoColor=white)
+![Font Awesome](https://img.shields.io/badge/Font_Awesome-7.1-339AF0?style=flat&logo=font-awesome&logoColor=white)
 
-In the project directory, you can run:
+##  Features
 
-### `npm start`
+- **📖 Book Browsing**: Browse through a curated collection of books with ratings, prices, and sale information
+- **🔍 Filtering**: Filter books by rating and price
+- **🛒 Shopping Cart**: Full cart functionality with quantity management
+- **💰 Dynamic Pricing**: Real-time price calculations with tax and subtotal
+- **⭐ Star Ratings**: Visual star ratings with support for half-stars
+- **🎨 Skeleton Loading**: Smooth loading states for better UX
+- **📱 Responsive Design**: Fully responsive across all devices
+- **🚀 Fast Navigation**: Client-side routing with React Router for instant page transitions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React 19.2** - UI library
+- **React Router v6** - Client-side routing
+- **Font Awesome** - Icons
+- **CSS3** - Styling and animations
+- **JavaScript ES6+** - Modern JavaScript features
 
-### `npm test`
+##  Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/library-react-project.git
+cd library-react-project
+```
 
-### `npm run build`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Project Structure
 
-### `npm run eject`
+```
+library-react-project/
+├── public/
+│   ├── index.html
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── Nav.jsx              # Navigation bar
+│   │   ├── Footer.jsx           # Footer component
+│   │   ├── Landing.jsx          # Hero section
+│   │   ├── Highlights.jsx       # Features section
+│   │   ├── Featured.jsx         # Featured books
+│   │   ├── Discounted.jsx       # Discounted books
+│   │   ├── Explore.jsx          # CTA section
+│   │   └── UI/
+│   │       ├── Book.jsx         # Book card with skeleton loading
+│   │       ├── Rating.jsx       # Star rating component
+│   │       ├── Price.jsx        # Price display component
+│   │       └── Highlight.jsx    # Feature highlight card
+│   ├── pages/
+│   │   ├── Home.jsx             # Home page
+│   │   ├── Books.jsx            # Books listing page
+│   │   ├── BookDetails.jsx      # Individual book details
+│   │   └── Cart.jsx             # Shopping cart page
+│   ├── assets/                  # Images and SVGs
+│   ├── App.jsx                  # Main app component
+│   ├── data.js                  # Mock book data
+│   ├── index.js                 # Entry point
+│   └── index.css                # Global styles
+└── package.json
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##  Key Features 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Cart Management
+- Add books to cart with quantity tracking
+- Update quantities directly from cart
+- Remove items from cart
+- Automatic price calculations (subtotal, tax, total)
+- Persistent cart state across navigation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Image Loading
+- Skeleton screens while images load
+- Smooth transitions from skeleton to loaded images
+- Optimized loading with `onload` detection
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Routing
+- `/` - Home page with featured and discounted books
+- `/books` - Full books catalog with filtering
+- `/books/:title` - Individual book details
+- `/cart` - Shopping cart
 
-## Learn More
+### State Management
+- Lifted state pattern for cart management
+- Props drilling for component communication
+- Functional state updates to avoid stale state bugs
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##  Available Scripts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `npm start` - Run the app in development mode
+- `npm run build` - Build the app for production
+- `npm test` - Run tests
+- `npm run eject` - Eject from Create React App (one-way operation)
 
-### Code Splitting
+## 💡 What I Learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project helped me understand:
+- **React state management**: Lifting state, functional updates, and avoiding mutations
+- **Declarative vs imperative patterns**: Using `.map()` to transform entire arrays instead of imperative loops
+- **useEffect dependencies**: Proper dependency management to avoid infinite loops
+- **Image loading optimization**: Using skeleton screens and load detection
+- **Component composition**: Breaking UI into reusable components
+- **React Router**: Client-side routing and navigation
 
-### Analyzing the Bundle Size
+##  Design 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Clean, modern UI with purple accent color
+- Skeleton loading states for smooth UX
+- Responsive layout
+- Hover effects and transitions
 
-### Making a Progressive Web App
+## 📝 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [ ] Backend integration with real API
+- [ ] User authentication
+- [ ] Search functionality
+- [ ] Wishlist feature
+- [ ] Order history
+- [ ] Book reviews and comments
+- [ ] Pagination for books list
+- [ ] LocalStorage for cart persistence
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👤 Author
 
-### Deployment
+**Binit Acharya**
+- GitHub: [@yourusername](https://github.com/BinitAcharya7)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🙏 Acknowledgments
 
-### `npm run build` fails to minify
+- Built with Create React App
+- Icons from Font Awesome
+- Inspired by modern e-commerce platforms
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
