@@ -143,7 +143,7 @@ This project helped me understand:
 ## 👤 Author
 
 **Binit Acharya**
-- GitHub: [@yourusername](https://github.com/BinitAcharya7)
+- GitHub: [BinitAcharya7](https://github.com/BinitAcharya7)
 
 ## 🙏 Acknowledgments
 
