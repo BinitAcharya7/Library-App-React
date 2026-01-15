@@ -19,7 +19,7 @@ export default function Book({ title, img, originalPrice, salePrice, rating, ico
 
   return (
 <div className="book">
-    {!image ? /* after onload of the cover object, setImage is called and it sets image to img(book.url(cover.src)) */
+    {!image ? 
     <>
     <div className="book__img--skeleton"></div>
     <div className="skeleton book__title--skeleton">
